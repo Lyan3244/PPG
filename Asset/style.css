@@ -112,7 +112,7 @@ input{
 
 /*===Reusable CSS Classes===*/
 .section{
-    padding: 4.5rem 0 2.5rem;
+    padding: 0 0 2rem;
 }
 
 .section__title{
@@ -221,6 +221,18 @@ input{
     right: 0;
 }
 
+/* change bg header*/
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 0 4px hasla(var(--hue-color), 64%, 15%, .15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle{
+    color: var(--title-color);
+}
+
+
 .home__img{
     position:absolute;
     top: 0;
@@ -260,3 +272,105 @@ input{
     color: var(--white-color);
 }
 
+.podcast_h2{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.podcast1{
+    border-radius: 12px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.podcast_button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 1rem;
+    transition: .3s
+}
+
+.podcast_button:hover{
+    background-color: var(--first-color-alt);
+    color: var(--white-color);
+}
+
+.podcast1 img,
+.podcast1 p{
+    margin: 5px;
+}
+
+.podcast_p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.podcast_container{
+    display: flex;
+    align-content: center;
+}
+
+.blog_section{
+    background-color: var(--first-color);
+}
+
+.blog_h2{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 50px;
+    color: var(--white-color);
+}
+
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__link{
+        color: var(--white-color);
+        text-transform: initial;
+    }
+    .nav__link:hover{
+        color: var(--white-color);  
+    }
+    .nav__dark{
+        position: initial;
+    }
+    .nav__menu{
+        display: flex;
+        column-gap: 1rem;
+    }
+    .nav__list{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .nav__toggle,
+    .nav__close,
+    .change-theme-name{
+        display: none;
+    }
+    .change-theme{
+        color: var(--white-color);
+    }
+    .scroll-header .nav__link{
+        color: var(--text-color);
+    }
+    .scroll-header .nav__link:hover{
+        color: var(--white-color);
+    }
+    .scroll-header .nav__item:hover{
+        background-color: var(--first-color);
+    }
+    .home__data{
+        margin-left: 30px;
+        margin-top: 90px;
+    }
+}
