@@ -283,8 +283,8 @@ input{
     border: 1px solid;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .podcast_button{
@@ -308,7 +308,6 @@ input{
 .podcast_p{
     padding-left: 10px;
     padding-bottom: 10px;
-    padding-top: 20px;
 }
 
 .podcast_container{
@@ -373,5 +372,18 @@ input{
     .home__data{
         margin-left: 30px;
         margin-top: 90px;
+    }
+    .podcast1{
+        border-radius: 12px;
+        border: 1px solid;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .podcast_p{
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 50px;
     }
 }
