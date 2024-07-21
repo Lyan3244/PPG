@@ -380,6 +380,103 @@ input{
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 767px){
+    .img_container{
+        margin-top:1rem;
+        background-color: var(--first-color-alt);
+        padding: 0.5rem;
+    }
+
+    .blog_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .blog_container{
+        color: var(--white-color);
+    }
+    
+    .blog_p{
+        background-color: var(--first-color-alt);
+        padding: 0.5rem;
+    }
+    
+    .blog_p .button{
+        margin-left: 1px;
+        margin-bottom: 0.5rem;
+        font-size: var(--small-font-size);
+        padding: 0.75rem;
+    }
+    
+    .blog_p p{
+        padding-bottom: 0.5rem;
+    }
+    
+    h3 {
+        color: var(--white-color);
+        padding-bottom: 0.5rem;
+    }
+    
+    .img_container .button{
+        margin-left: 1px;
+        margin-bottom: 0.5rem;
+        font-size: var(--small-font-size);
+        padding: 0.75rem;
+    }
+    
+    .satu_container p{
+        padding-bottom: 0.5rem;
+    }
+    
+    .satu_container{
+        padding-bottom: 0.5rem;
+    }
+    
+    .dua_container p{
+        padding-bottom: 0.5rem;
+    }
+
+    .essays_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .essays_p h3{
+        color: var(--first-color);
+    }
+
+    .essays_p{
+        border: 1px solid;
+        border-radius: 12px;
+        padding: 0.5rem;
+    }
+
+    .essays_p .button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: var(--small-font-size);
+        padding: 0.75rem;
+        background-color: var(--first-color);
+        color: var(--white-color);
+    }
+
+    .p_container{
+        margin-top:1rem;
+        border: 1px solid;
+        border-radius: 12px;
+        padding: 0.5rem;
+    }
+
+    .p_container .button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: var(--small-font-size);
+        padding: 0.75rem;
+        background-color: var(--first-color);
+        color: var(--white-color);
+    }
+}
+
 @media screen and (min-width: 768px){
     body{
         margin: 0;
@@ -448,12 +545,13 @@ input{
         color: var(--white-color);
         font-size: var(--normal-font-size);
         margin-right: 40px;
+        padding: 0.5rem;
         background-color: var(--first-color-alt);
     }
 
     .blog_p p,
     .blog_p h3{
-        padding: 1rem;
+        padding: 0.5rem;
         color: var(--white-color);
     }
     .blog_container{
@@ -464,30 +562,27 @@ input{
     }
 
     .blog_p .button{
-        margin-left: 15px;
+        margin-left: 7px;
         margin-bottom: 1rem;
         font-size: var(--small-font-size);
         padding: 0.75rem;
     }
 
     .img_container p{
-        padding: 0.75rem;
+        padding: 0.5rem;
         color: var(--white-color);
     }
 
     .img_container{
+        padding: 0.5rem;
         background-color: var(--first-color-alt);
     }
 
     .img_container .button{
-        margin-left: 12px;
-        margin-bottom: 1rem;
+        margin-left: 7px;
+        margin-bottom: 0.5rem;
         font-size: var(--small-font-size);
         padding: 0.75rem;
-    }
-
-    .essays_section{
-        margin-top: 40px;
     }
 
     .essays_container{
@@ -499,7 +594,10 @@ input{
 
     .essays_p p,
     .essays_p h3{
-        padding: 1rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
     }
 
     .essays_p{
@@ -511,8 +609,9 @@ input{
     }
 
     .essays_p .button{
-        margin-left: 15px;
+        margin-left: 12px;
         margin-bottom: 1rem;
+        margin-top: 0.5rem;
         font-size: var(--small-font-size);
         padding: 0.75rem;
         background-color: var(--first-color);
@@ -525,7 +624,10 @@ input{
     }
 
     .p_container p{
-        padding: 0.75rem;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
     }
 
     .p_container .button{
@@ -535,5 +637,16 @@ input{
         padding: 0.75rem;
         background-color: var(--first-color);
         color: var(--white-color);
+    }
+
+    .video{
+        position: relative;
+        left: 17%;
+    }
+
+    .video_button{
+        position: absolute;
+        right: 17rem;
+        bottom: -1rem;
     }
 }
