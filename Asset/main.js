@@ -17,6 +17,16 @@ if(navClose){
     })
 }
 
+/*===SHOW MENU===*/
+const nav1Toggle = document.getElementById('nav1-toggle')
+
+/* Validate if constant exists */
+if(nav1Toggle){
+    nav1Toggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
