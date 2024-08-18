@@ -151,16 +151,17 @@ input{
     justify-content: space-between;
     align-items: center;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1 rem;
+    font-size: 0.9rem;
     font-weight: 800;
 }
 
 .nav1{
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1 rem;
+    font-size: 0.9rem;
     font-weight: 800;
 }
 
@@ -177,11 +178,13 @@ input{
 .nav1__logo{
     font-weight: var(--font-semi-bold);
     font-size: var(--h1-font-size);
+    padding-left: 2rem;
 }
 
 .nav__logo{
     font-weight: var(--font-semi-bold);
     font-size: var(--h1-font-size);
+    padding-left: 2rem;
 }
 
 .nav1__toggle{
@@ -196,11 +199,28 @@ input{
 
 .nav__menu{
     position: relative;
-    padding-left: 35rem;
+    padding-left: 22rem;
+}
+
+.nav1__menu{
+    position: relative;
+    padding-left: 22rem;
 }
 
 @media screen and (max-width: 767px){
     .nav__menu{
+        position: fixed;
+        background-color: var(--body-color);
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        box-shadow: -1px 0 4px hsla(var(--hue-color), 64%, 15%, .15);
+        padding: 3rem;
+        transition: .4s;
+    }
+
+    .nav1__menu{
         position: fixed;
         background-color: var(--body-color);
         top: 0;
@@ -219,7 +239,18 @@ input{
     row-gap: 1rem;
 }
 
+.nav1__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
 .nav__link{
+    color: var(--text-color-light);
+    text-transform: uppercase;
+}
+
+.nav1__link{
     color: var(--text-color-light);
     text-transform: uppercase;
 }
@@ -229,6 +260,11 @@ input{
 }
 
 .nav__item{
+    padding: 10px;
+    color: var(--first-color);
+}
+
+.nav1__item{
     padding: 10px;
     color: var(--first-color);
 }
@@ -536,6 +572,9 @@ input{
     .nav{
         height: calc(var(--header-height) + 1.5rem);
     }
+    .nav1{
+        height: calc(var(--header-height) + 1.5rem);
+    }
     .nav__link{
         color: var(--white-color);
         text-transform: initial;
@@ -555,6 +594,10 @@ input{
         column-gap: 1rem;
     }
     .nav__list{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .nav1__list{
         flex-direction: row;
         column-gap: 2rem;
     }
